@@ -13,7 +13,7 @@ export default function EbookGeneratorForm() {
     setLoading(true);
     setEbook(null);
 
-    const response = await fetch("http://localhost:8000/generate-ebook", {
+    const response = await fetch("https://wordsmithuk-backend.onrender.com/generate-ebook", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
